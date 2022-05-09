@@ -1,4 +1,4 @@
-	pragma circom 2.0.0;
+pragma circom 2.0.0;
 
 include "../../node_modules/circomlib/circuits/comparators.circom";
 
@@ -18,8 +18,10 @@ template RangeProof(n) {
     high.in[1] <== in;
     high.out === 1;
 
+
+
     out <-- (low.out + high.out) *1/2;
     out === 1;    
 }
 
-component main = RangeProof(32);
+//component main = RangeProof(32);
